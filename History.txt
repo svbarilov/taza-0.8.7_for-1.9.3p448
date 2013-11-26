@@ -1,0 +1,74 @@
+=== 0.8.7
+
+* Added script/console Utility
+* Integration with user_choices
+* Attach to open IE instance
+
+=== 0.8.6
+
+* Added feature to keep browser open after tests
+* Added access to multiple levels in Fixtures
+* Added feature to return a Hash in Fixtures 
+* lib/flows is no longer generated
+* Page module filters for elements inside page modules
+
+=== 0.8.5
+
+* Fixed Fixtures bugs
+* Fixture entities can be accessed like hashes(foo[:bar])
+* Functional tests are now 'isolation' tests
+* Added Page-Module feature
+
+=== 0.8.4
+
+* Added one to many relationship in fixtures
+* Added Templating of fixtures
+* Added Site Secific fixtures
+* Spec Rake Tasks are now generated Recursively
+
+=== 0.8.2 / 2009-01-11
+
+* Added Partials
+* Added Preliminary Fixture Support
+* Fixed horrible infinite loop bug in Filters
+* Added Configurability to a Taza projects Rakefile
+
+=== 0.8.0 / 2008-11-23
+
+Taza is a web application testing framework meant to be used with browsed-based testing libraries like WATIR or Selenium
+
+Not all web applications can be written in Ruby, unfortunately. When you aren't testing an application that was written with testing in mind Taza can provide a structured and opionated way to do browser-based testing.
+
+* Sites have Pages
+* Sites have Flows that move through Pages
+* Pages have elements and filters to define simple ways of interacting with them
+* Pages have tests/specs that help chip away at the dreaded 0% Coverage Beast™
+
+* Features
+  * Generate a Taza project easily
+  * Generate Sites, Pages, and Flows using a familiar format(./script/generate)
+  * Automatically generate specs when generating a site to push you
+  * Easily switch browser and/or driver
+  * Automatic opening and cleanup of browser
+  * Included rake spec commands generated for sites and pages
+  * Rake spec commands will create an RSpec HTML report by default
+  * Easily tie-in special functionality like getting a DOM dump of each browser before it closes
+
+* Todo
+  0.8.x
+    * Add a taza_example to easily generate a fully-functional example of how a taza project might look
+    * Provide more documentation
+  0.9
+    * Add more thorough Selenium support
+    * Easily allow overwriting of spec options for included rake tasks
+    * Provide better conventions around cross-site testing
+  1.0
+    * Using Selenium with WATIR syntax(Easily switch between Selenium and WATIR without having to change any Page code)
+    * Provide more advanced documentation
+
+=== 0.5.0 / 2008-10-03
+
+* 1 major enhancement
+
+  * Birthday!
+
