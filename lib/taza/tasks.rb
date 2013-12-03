@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake'
 require 'taglob'
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 
 def tags
   ENV['TAGS']
